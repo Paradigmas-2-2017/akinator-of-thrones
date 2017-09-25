@@ -1,3 +1,7 @@
+%turning off singleton warnings
+:- style_check(-singleton).
+:- style_check(-discontiguous).
+
 :- dynamic positive/1.
 :- dynamic negative/1.
 :- dynamic diagnostic/0.
@@ -9,6 +13,8 @@
 :- dynamic analysis/0.
 :- dynamic clearBase/1.
 :- dynamic clearBase1/1.
+:- dynamic main/0.
+:- dynamic main/1.
 
 %symbolic fact
 positive(nothing).
